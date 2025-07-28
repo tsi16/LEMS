@@ -1,6 +1,12 @@
 ﻿@model LEMS.Models.Equipment
 
 @{
+    if (Model == null)
+    {
+        <div class="alert alert-danger text-center">Error: Equipment details could not be loaded.</div>
+        return;
+    }
+
     ViewData["Title"] = "Equipment Details";
 }
 
@@ -18,18 +24,19 @@
 
             <div class="row row-cols-1 row-cols-md-2 g-3">
                 <div class="col">
-                    <p class="mb-1"><strong>Model:</strong> @Model.Model</p>
-                    <p class="mb-1"><strong>Manufacturer:</strong> @Model.Manufacturer</p>
-                    <p class="mb-1"><strong>Serial Number:</strong> @Model.SerialNumber</p>
-                    <p class="mb-1"><strong>Purchase Date:</strong> @Model.PurchaseDate.ToShortDateString()</p>
-                    <p class="mb-1"><strong>Maintenance Date:</strong> @Model.MaintenanceDate.ToShortDateString()</p>
+                    <p class="mb-1"><strong>Model:</strong> @(Model.Model?.Name ?? "N/A")</p>
+                    <p class="mb-1"><strong>Manufacturer:</strong> @(Model.Manufacturer?.Name ?? "N/A")</p>
+                    <p class="mb-1"><strong>Serial Number:</strong> @(Model.SerialNumber ?? "N/A")</p>
+                    <p class="mb-1"><strong>Purchase Date:</strong> @(Model.PurchaseDate != DateTime.MinValue ? Model.PurchaseDate.ToShortDateString() : "N/A")</p>
+                    <p class="mb-1"><strong>Maintenance Date:</strong> @(Model.MaintenanceDate != DateTime.MinValue ? Model.MaintenanceDate.ToShortDateString() : "N/A")</p>
                 </div>
 
                 <div class="col">
                     <p class="mb-1"><strong>Location:</strong> @Model.Location</p>
-                    <p class="mb-1"><strong>Measurement Unit:</strong> @Model.MeasurmentUnit</p>
+                    <p class="mb-1"><strong>Measurement Unit:</strong> @(Model.MeasurmentUnit != null ? Model.MeasurmentUnit.ToString() : "N/A")</p>
+
                     <p class="mb-1"><strong>Code:</strong> @Model.Code</p>
-                    <p class="mb-1"><strong>Type:</strong> @Model.EquipmentsType?.Name</p>
+                    <p class="mb-1"><strong>Type:</strong> @(Model.EquipmentsType?.Name ?? "N/A")</p>
                     <p class="mb-1"><strong>Description:</strong> @Model.Discription</p>
                 </div>
             </div>

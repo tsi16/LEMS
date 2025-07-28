@@ -45,32 +45,43 @@ namespace LEMS.Controllers
         // GET: Labratories/Create
         public IActionResult Create()
         {
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Id");
+            ViewBag.DepartmentId = new SelectList(_context.Departments, "Id", "Name");
             return View();
         }
 
-        // POST: Labratories/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Labratory/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Name,DepartmentId,Description,IsActive,IsDeleted")] Labratory labratory)
         {
             try
             {
-                _context.Add(labratory);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                // If Department is a navigation property, remove it from validation
+                ModelState.Remove("Department");
+
+                if (ModelState.IsValid)
+                {
+                    _context.Add(labratory);
+                    await _context.SaveChangesAsync();
+
+                   
+                    return RedirectToAction(nameof(Index));
+                }
             }
             catch (Exception ex)
             {
-                // Optional: log the error (ex) if needed
-                ModelState.AddModelError(string.Empty, "An error occurred while saving data. Please check your input and try again.");
+               
+                ModelState.AddModelError(string.Empty, "An error occurred while saving. Please try again.");
             }
 
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Id", labratory.DepartmentId);
+            
+            ViewBag.DepartmentId = new SelectList(_context.Departments, "Id", "Name", labratory.DepartmentId);
             return View(labratory);
         }
+
+
+
+
 
 
         // GET: Labratories/Edit/5

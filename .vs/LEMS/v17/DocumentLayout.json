@@ -1,0 +1,354 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\LEMST\\LEMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\controllers\\labratoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\controllers\\labratoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\controllers\\pubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\controllers\\pubcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\views\\pub\\equipdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\views\\pub\\equipdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\views\\pub\\equipment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\views\\pub\\equipment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\controllers\\equipmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\controllers\\equipmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\models\\lemscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\models\\lemscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\views\\labratories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\views\\labratories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\views\\equipments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\views\\equipments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\views\\pub\\departments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\views\\pub\\departments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\models\\labratory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\models\\labratory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\views\\equipments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\views\\equipments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\views\\pub\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\views\\pub\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\views\\equipments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\views\\equipments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\views\\labratories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\views\\labratories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LEMSContext.cs",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Models\\LEMSContext.cs",
+              "RelativeDocumentMoniker": "LEMS\\Models\\LEMSContext.cs",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Models\\LEMSContext.cs",
+              "RelativeToolTip": "LEMS\\Models\\LEMSContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T08:38:07.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\appsettings.json",
+              "RelativeDocumentMoniker": "LEMS\\appsettings.json",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\appsettings.json",
+              "RelativeToolTip": "LEMS\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-04T08:37:12.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Views\\Labratories\\Create.cshtml",
+              "RelativeDocumentMoniker": "LEMS\\Views\\Labratories\\Create.cshtml",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Views\\Labratories\\Create.cshtml",
+              "RelativeToolTip": "LEMS\\Views\\Labratories\\Create.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAIwDEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-01T07:28:40.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Views\\Equipments\\Create.cshtml",
+              "RelativeDocumentMoniker": "LEMS\\Views\\Equipments\\Create.cshtml",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Views\\Equipments\\Create.cshtml",
+              "RelativeToolTip": "LEMS\\Views\\Equipments\\Create.cshtml",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAEgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-01T06:29:46.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Views\\Departments\\Create.cshtml",
+              "RelativeDocumentMoniker": "LEMS\\Views\\Departments\\Create.cshtml",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Views\\Departments\\Create.cshtml",
+              "RelativeToolTip": "LEMS\\Views\\Departments\\Create.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-30T08:49:51.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "LEMS\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "LEMS\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwDwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T08:25:35.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Views\\Equipments\\Index.cshtml",
+              "RelativeDocumentMoniker": "LEMS\\Views\\Equipments\\Index.cshtml",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Views\\Equipments\\Index.cshtml",
+              "RelativeToolTip": "LEMS\\Views\\Equipments\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-24T07:02:47.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Views\\Equipments\\Details.cshtml",
+              "RelativeDocumentMoniker": "LEMS\\Views\\Equipments\\Details.cshtml",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Views\\Equipments\\Details.cshtml",
+              "RelativeToolTip": "LEMS\\Views\\Equipments\\Details.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-24T07:02:09.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EquipmentsController.cs",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Controllers\\EquipmentsController.cs",
+              "RelativeDocumentMoniker": "LEMS\\Controllers\\EquipmentsController.cs",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Controllers\\EquipmentsController.cs",
+              "RelativeToolTip": "LEMS\\Controllers\\EquipmentsController.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:57:05.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EquipDetails.cshtml",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Views\\Pub\\EquipDetails.cshtml",
+              "RelativeDocumentMoniker": "LEMS\\Views\\Pub\\EquipDetails.cshtml",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Views\\Pub\\EquipDetails.cshtml",
+              "RelativeToolTip": "LEMS\\Views\\Pub\\EquipDetails.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAACoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-24T06:56:23.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Views\\Pub\\Contact.cshtml",
+              "RelativeDocumentMoniker": "LEMS\\Views\\Pub\\Contact.cshtml",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Views\\Pub\\Contact.cshtml",
+              "RelativeToolTip": "LEMS\\Views\\Pub\\Contact.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-24T05:46:52.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Labratory.cs",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Models\\Labratory.cs",
+              "RelativeDocumentMoniker": "LEMS\\Models\\Labratory.cs",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Models\\Labratory.cs",
+              "RelativeToolTip": "LEMS\\Models\\Labratory.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAB4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:45:14.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "LEMS\\Models\\Department.cs",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Models\\Department.cs",
+              "RelativeToolTip": "LEMS\\Models\\Department.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:41:56.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Equipment.cs",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Models\\Equipment.cs",
+              "RelativeDocumentMoniker": "LEMS\\Models\\Equipment.cs",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Models\\Equipment.cs",
+              "RelativeToolTip": "LEMS\\Models\\Equipment.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAACAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:39:34.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Departments.cshtml",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Views\\Pub\\Departments.cshtml",
+              "RelativeDocumentMoniker": "LEMS\\Views\\Pub\\Departments.cshtml",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Views\\Pub\\Departments.cshtml",
+              "RelativeToolTip": "LEMS\\Views\\Pub\\Departments.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-24T05:37:16.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PubController.cs",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Controllers\\PubController.cs",
+              "RelativeDocumentMoniker": "LEMS\\Controllers\\PubController.cs",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Controllers\\PubController.cs",
+              "RelativeToolTip": "LEMS\\Controllers\\PubController.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAqwM8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:38:08.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Equipment.cshtml",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Views\\Pub\\Equipment.cshtml",
+              "RelativeDocumentMoniker": "LEMS\\Views\\Pub\\Equipment.cshtml",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Views\\Pub\\Equipment.cshtml",
+              "RelativeToolTip": "LEMS\\Views\\Pub\\Equipment.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABcAAAB3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-24T05:36:45.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Views\\Labratories\\Details.cshtml",
+              "RelativeDocumentMoniker": "LEMS\\Views\\Labratories\\Details.cshtml",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Views\\Labratories\\Details.cshtml",
+              "RelativeToolTip": "LEMS\\Views\\Labratories\\Details.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-23T09:06:24.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LabratoriesController.cs",
+              "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Controllers\\LabratoriesController.cs",
+              "RelativeDocumentMoniker": "LEMS\\Controllers\\LabratoriesController.cs",
+              "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\Controllers\\LabratoriesController.cs",
+              "RelativeToolTip": "LEMS\\Controllers\\LabratoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T08:42:20.446Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -37,6 +37,12 @@ public partial class LEMSContext : DbContext
 
     public virtual DbSet<LabratoryAssignment> LabratoryAssignments { get; set; }
 
+    public virtual DbSet<Manufacturer> Manufacturers { get; set; }
+
+    public virtual DbSet<MeasurmentUnit> MeasurmentUnits { get; set; }
+
+    public virtual DbSet<Model> Models { get; set; }
+
     public virtual DbSet<Role> Roles { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
@@ -70,10 +76,23 @@ public partial class LEMSContext : DbContext
         {
             entity.Property(e => e.IsActive).HasDefaultValue(true);
             entity.Property(e => e.IsDeleted).HasDefaultValue(false);
+            entity.Property(e => e.MeasurmentUnitId).HasDefaultValue(1);
 
             entity.HasOne(d => d.EquipmentsType).WithMany(p => p.Equipment)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Equipments_EquipmentsTypes");
+
+            entity.HasOne(d => d.Manufacturer).WithMany(p => p.Equipment)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Equipments_Manufacturers");
+
+            entity.HasOne(d => d.MeasurmentUnit).WithMany(p => p.Equipment)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Equipments_MeasurmentUnits");
+
+            entity.HasOne(d => d.Model).WithMany(p => p.Equipment)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Equipments_Models");
         });
 
         modelBuilder.Entity<EquipmentEntry>(entity =>
@@ -164,6 +183,21 @@ public partial class LEMSContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.LabratoryAssignmentUsers)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_LabratoryAssignments_Users");
+        });
+
+        modelBuilder.Entity<Manufacturer>(entity =>
+        {
+            entity.Property(e => e.IsActive).HasDefaultValue(true);
+        });
+
+        modelBuilder.Entity<MeasurmentUnit>(entity =>
+        {
+            entity.Property(e => e.IsActive).HasDefaultValue(true);
+        });
+
+        modelBuilder.Entity<Model>(entity =>
+        {
+            entity.Property(e => e.IsActive).HasDefaultValue(true);
         });
 
         modelBuilder.Entity<Role>(entity =>

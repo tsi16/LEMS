@@ -32,16 +32,21 @@ namespace LEMS.Controllers
             return View(labs);
         }
 
-        public ActionResult Equipment(int id)
+        public ActionResult Equipment(string search)
         {
-            var equipments =  _context.Equipments
-               .Include(e => e.EquipmentsType)
-               //.Where(e => e.IsActive && (e.IsDeleted == null || e.IsDeleted == false))
-               .ToList();
+            var equipment = _context.Equipments
+                .Include(e => e.EquipmentsType)
+                .AsQueryable();
 
-            return View(equipments);
+            if (!string.IsNullOrEmpty(search))
+            {
+                equipment = equipment.Where(e => e.Name.Contains(search));
+                ViewBag.SearchTerm = search;
+            }
+
+            return View(equipment.ToList());
         }
-          
+
         public ActionResult Departments()
         {
             var departments =  _context.Departments
@@ -196,6 +201,8 @@ namespace LEMS.Controllers
         {
             var equipment = _context.Equipments
                 .Include(e => e.EquipmentsType)
+                .Include(e => e.Model) 
+                .Include(e => e.Manufacturer) 
                 .FirstOrDefault(e => e.Id == id);
 
             if (equipment == null)
@@ -221,6 +228,20 @@ namespace LEMS.Controllers
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
         }
+
+        //public IActionResult Equipment(string search)
+        //{
+        //    var equipment = _context.Equipments.AsQueryable();
+
+        //    if (!string.IsNullOrEmpty(search))
+        //    {
+        //        equipment = equipment.Where(e => e.Name.Contains(search));
+        //        ViewBag.SearchTerm = search;
+        //    }
+
+        //    return View(equipment.ToList());
+        //}
+
 
     }
 }

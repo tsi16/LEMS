@@ -47,7 +47,7 @@ namespace LEMS.Controllers
         // GET: Departments/Create
         public IActionResult Create()
         {
-            ViewData["BranchId"] = new SelectList(_context.Branchs, "Id", "Id");
+            ViewData["BranchId"] = new SelectList(_context.Branchs, "Id", "Name");
             return View();
         }
 
@@ -58,6 +58,7 @@ namespace LEMS.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,BranchId,Name,IsActive,IsDeleted")] Department department)
         {
+            ModelState.Remove("Branch");
             if (ModelState.IsValid)
             {
                 _context.Add(department);

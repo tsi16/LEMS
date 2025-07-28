@@ -848,12 +848,6 @@ D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\scopedcss\projectbundle\LEMS.bundle.scp.css
 D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\staticwebassets.build.json
 D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\staticwebassets.development.json
 D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\staticwebassets\msbuild.LEMS.Microsoft.AspNetCore.StaticWebAssets.props
-D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\staticwebassets\msbuild.LEMS.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\staticwebassets\msbuild.build.LEMS.props
-D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.LEMS.props
-D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LEMS.props
-D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\staticwebassets.pack.json
 D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\LEMS.csproj.Up2Date
 D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\LEMS.dll
@@ -862,3 +856,9 @@ D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\LEMS.pdb
 D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\LEMS.genruntimeconfig.cache
 D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\ref\LEMS.dll
 D:\LEMST\LEMS\LEMS\bin\Debug\net8.0\hu_utils.dll
+D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\LEMS.sourcelink.json
+D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\LEMST\LEMS\LEMS\obj\Debug\net8.0\staticwebassets.build.json.cache

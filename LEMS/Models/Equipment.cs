@@ -14,11 +14,9 @@ public partial class Equipment
     [StringLength(50)]
     public string Name { get; set; } = null!;
 
-    [StringLength(50)]
-    public string Model { get; set; } = null!;
+    public int ModelId { get; set; }
 
-    [StringLength(50)]
-    public string Manufacturer { get; set; } = null!;
+    public int ManufacturerId { get; set; }
 
     [StringLength(150)]
     public string SerialNumber { get; set; } = null!;
@@ -32,8 +30,7 @@ public partial class Equipment
     [StringLength(50)]
     public string Location { get; set; } = null!;
 
-    [StringLength(50)]
-    public string MeasurmentUnit { get; set; } = null!;
+    public int MeasurmentUnitId { get; set; }
 
     [StringLength(50)]
     public string Code { get; set; } = null!;
@@ -62,4 +59,16 @@ public partial class Equipment
 
     [InverseProperty("Equipment")]
     public virtual ICollection<LaboratoryEquipment> LaboratoryEquipments { get; set; } = new List<LaboratoryEquipment>();
+
+    [ForeignKey("ManufacturerId")]
+    [InverseProperty("Equipment")]
+    public virtual Manufacturer Manufacturer { get; set; } = null!;
+
+    [ForeignKey("MeasurmentUnitId")]
+    [InverseProperty("Equipment")]
+    public virtual MeasurmentUnit MeasurmentUnit { get; set; } = null!;
+
+    [ForeignKey("ModelId")]
+    [InverseProperty("Equipment")]
+    public virtual Model Model { get; set; } = null!;
 }

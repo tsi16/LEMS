@@ -48,7 +48,7 @@ namespace LEMS.Controllers
         // GET: Equipments/Create
         public IActionResult Create()
         {
-            ViewData["EquipmentsTypeId"] = new SelectList(_context.EquipmentsTypes, "Id", "Id");
+            ViewData["EquipmentsTypeId"] = new SelectList(_context.EquipmentsTypes, "Id", "Name");
             return View();
         }
 
@@ -73,22 +73,22 @@ namespace LEMS.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,MeasurmentUnit,Code,EquipmentsTypeId,PhotoUrl,Discription,IsActive,IsDeleted")] Equipment equipment)
+        public async Task<IActionResult> Create([Bind("Id,Name,MeasurmentUnit,Model,Manufacturer,SerialNumber,PurchaseDate,MaintenanceDate,Location,Code,EquipmentsTypeId,PhotoUrl,Discription,IsActive,IsDeleted")] Equipment equipment)
         {
-            try
+            ModelState.Remove("EquipmentsType");
+            if (ModelState.IsValid)
             {
                 _context.Add(equipment);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch (Exception ex)
-            {
+            
                 // Optional: log the error
                 ModelState.AddModelError(string.Empty, "An error occurred while saving the equipment.");
 
-                ViewData["EquipmentsTypeId"] = new SelectList(_context.EquipmentsTypes, "Id", "Id", equipment.EquipmentsTypeId);
+                ViewData["EquipmentsTypeId"] = new SelectList(_context.EquipmentsTypes, "Id", "Name", equipment.EquipmentsTypeId);
                 return View(equipment);
-            }
+            
         }
 
         // GET: Equipments/Edit/5

@@ -1,11 +1,15 @@
 ﻿@model IEnumerable<LEMS.Models.Equipment>
-
 @{
     ViewData["Title"] = "Equipment List";
+    var searchTerm = ViewBag.SearchTerm as string;
 }
 
+<h2 class="text-center mb-4">📋 Equipment Catalog</h2>
 
-<h2 class="text-center mb-5">📋 Equipment Catalog</h2>
+<form asp-action="Equipment" method="get" class="d-flex justify-content-center mb-3">
+    <input type="text" name="search" value="@searchTerm" class="form-control w-50 me-2" placeholder="Search equipment by name..." />
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
     @foreach (var item in Model)
@@ -17,11 +21,10 @@
 
                 <div class="equipment-details">
                     <div class="equipment-title">@item.Name</div>
-                    <div class="equipment-info"><strong>Model:</strong> @item.Model</div>
+                    <div class="equipment-info"><strong>Model:</strong> @(item.Model != null ? item.Model.Name : "N/A") </div>
                 </div>
 
-                <a href="@Url.Action("EquipDetails", "Pub", new { id = @item.Id })" class="see-more-btn">See More</a>
-               
+                <a href="@Url.Action("EquipDetails", "Pub", new { id = item.Id })" class="see-more-btn">See More</a>
             </div>
         </div>
     }
@@ -40,9 +43,9 @@
         flex-direction: column;
     }
 
-    .equipment-card:hover {
-        transform: translateY(-4px);
-    }
+        .equipment-card:hover {
+            transform: translateY(-4px);
+        }
 
     .equipment-image {
         width: 100%;
@@ -81,9 +84,9 @@
         transition: background 0.2s ease;
     }
 
-    .see-more-btn:hover {
-        background-color: #095f5f;
-        text-decoration: none;
-        color: #fff;
-    }
+        .see-more-btn:hover {
+            background-color: #095f5f;
+            text-decoration: none;
+            color: #fff;
+        }
 </style>

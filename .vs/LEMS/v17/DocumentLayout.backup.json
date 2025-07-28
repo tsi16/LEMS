@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\LEMST\\LEMS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\controllers\\labratoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\controllers\\labratoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\models\\lemscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\models\\lemscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|solutionrelative:lems\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88354EAE-FF65-4C86-A2EA-C9B5F2C25BDA}|LEMS\\LEMS.csproj|d:\\lemst\\lems\\lems\\views\\labratories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 25,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LEMSContext.cs",
               "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Models\\LEMSContext.cs",
               "RelativeDocumentMoniker": "LEMS\\Models\\LEMSContext.cs",
@@ -130,15 +130,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\appsettings.json",
               "RelativeDocumentMoniker": "LEMS\\appsettings.json",
               "ToolTip": "D:\\LEMST\\LEMS\\LEMS\\appsettings.json",
               "RelativeToolTip": "LEMS\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-04T08:37:12.708Z"
+              "WhenOpened": "2025-07-04T08:37:12.708Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -214,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "EquipmentsController.cs",
               "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Controllers\\EquipmentsController.cs",
               "RelativeDocumentMoniker": "LEMS\\Controllers\\EquipmentsController.cs",
@@ -226,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EquipDetails.cshtml",
               "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Views\\Pub\\EquipDetails.cshtml",
               "RelativeDocumentMoniker": "LEMS\\Views\\Pub\\EquipDetails.cshtml",
@@ -298,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PubController.cs",
               "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Controllers\\PubController.cs",
               "RelativeDocumentMoniker": "LEMS\\Controllers\\PubController.cs",
@@ -310,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Equipment.cshtml",
               "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Views\\Pub\\Equipment.cshtml",
               "RelativeDocumentMoniker": "LEMS\\Views\\Pub\\Equipment.cshtml",
@@ -334,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LabratoriesController.cs",
               "DocumentMoniker": "D:\\LEMST\\LEMS\\LEMS\\Controllers\\LabratoriesController.cs",
               "RelativeDocumentMoniker": "LEMS\\Controllers\\LabratoriesController.cs",

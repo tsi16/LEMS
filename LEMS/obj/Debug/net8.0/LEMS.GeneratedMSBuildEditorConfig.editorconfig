@@ -1,0 +1,309 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LEMS
+build_property.RootNamespace = LEMS
+build_property.ProjectDir = D:\LEMST\LEMS\LEMS\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\LEMST\LEMS\LEMS
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/LEMST/LEMS/LEMS/Views/Branches/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Branches/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Branches/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Branches/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Branches/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/code_temp/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY29kZV90ZW1wXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/code_temp/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY29kZV90ZW1wXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Departments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Departments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Departments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Departments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Departments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/EquipmentsTypes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1R5cGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/EquipmentsTypes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1R5cGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/EquipmentsTypes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1R5cGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/EquipmentsTypes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1R5cGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/EquipmentsTypes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1R5cGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Equipments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Equipments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Equipments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Equipments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Equipments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Genders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Genders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Genders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Genders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Genders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/LaboratoryEquipments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yeUVxdWlwbWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/LaboratoryEquipments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yeUVxdWlwbWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/LaboratoryEquipments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yeUVxdWlwbWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/LaboratoryEquipments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yeUVxdWlwbWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/LaboratoryEquipments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFib3JhdG9yeUVxdWlwbWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Labratories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFicmF0b3JpZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Labratories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFicmF0b3JpZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Labratories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFicmF0b3JpZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Labratories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFicmF0b3JpZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Labratories/Equipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFicmF0b3JpZXNcRXF1aXBtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Labratories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFicmF0b3JpZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Pub/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHViXEFib3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Pub/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHViXENvbnRhY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Pub/Departments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHViXERlcGFydG1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Pub/EquipDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHViXEVxdWlwRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Pub/Equipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHViXEVxdWlwbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Pub/Labs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHViXExhYnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Pub/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHViXExvZ0luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Pub/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHViXFNpZ25VcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Roles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Roles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Roles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Roles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Shared/Components/menu/_admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcbWVudVxfYWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Shared/Components/menu/_pub.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcbWVudVxfcHViLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/UserRoles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/UserRoles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/UserRoles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/UserRoles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/UserRoles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclJvbGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/LEMST/LEMS/LEMS/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-teiqae1qvt

@@ -1,0 +1,259 @@
+﻿@model LEMS.Models.Labratory
+
+@{
+    ViewData["Title"] = "Laboratory Details";
+}
+
+<div class="container mt-4">
+    <div class="info-card p-4 shadow-lg">
+
+        <!-- LAB INFO SECTION -->
+        <h3 class="text-primary mb-4 border-bottom pb-2">🔬 Lab Information</h3>
+        <dl class="row">
+            <dt class="col-sm-3 fw-bold">Name</dt>
+            <dd class="col-sm-9">@Model.Name</dd>
+
+            <dt class="col-sm-3 fw-bold">Description</dt>
+            <dd class="col-sm-9">@Model.Description</dd>
+
+            <dt class="col-sm-3 fw-bold">Is Active</dt>
+            <dd class="col-sm-9">@Model.IsActive</dd>
+
+            <dt class="col-sm-3 fw-bold">Is Deleted</dt>
+            <dd class="col-sm-9">@Model.IsDeleted</dd>
+
+            <dt class="col-sm-3 fw-bold">Department</dt>
+            <dd class="col-sm-9">@Model.Department?.Name</dd>
+        </dl>
+
+        <div class="mt-3">
+            <a class="btn btn-outline-primary me-2" asp-action="Edit" asp-route-id="@Model?.Id">Edit Lab</a>
+            <a class="btn btn-secondary" asp-action="Index">Back to List</a>
+        </div>
+
+        <!-- EQUIPMENT SECTION -->
+        <h3 class="text-success mt-5 mb-3 border-bottom pb-2">⚙️ Laboratory Equipments</h3>
+        <div class="d-flex justify-content-end mb-3">
+            <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#addEquipmentModal">+ Add Equipment</button>
+        </div>
+
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Department</th>
+                    <th>Laboratory</th>
+                    <th>Equipment</th>
+                    <th>Active</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.LaboratoryEquipments)
+                {
+                    <tr>
+                        <td>@item.Department?.Name</td>
+                        <td>@item.Labratory?.Name</td>
+                        <td>@item.Equipment?.Name</td>
+                        <td>@(item.IsActive ? "Yes" : "No")</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                    ⋮
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#" onclick="openEditModal('@item.Id', '@item.EquipmentId', '@item.DepartmentId', '@item.IsActive')">Edit</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#" onclick="deleteEquipment('@item.Id')">Delete</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="@Url.Action("Equipment", "Labratories", new { id = item.Id })">View Details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- ADD EQUIPMENT MODAL -->
+<div class="modal fade" id="addEquipmentModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="AddEquipmentToLaboratory" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Equipment to Laboratory</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="labratoryId" value="@Model.Id" />
+
+                    <div class="mb-3">
+                        <label class="form-label">Select Equipment</label>
+                        <select class="form-select" name="equipmentId">
+                            @foreach (var eq in (SelectList)ViewBag.Equipments)
+                            {
+                                <option value="@eq.Value">@eq.Text</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Select Department</label>
+                        <select class="form-select" name="departmentId">
+                            @foreach (var dept in (SelectList)ViewBag.Departments)
+                            {
+                                <option value="@dept.Value">@dept.Text</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" name="isActive" value="true" checked />
+                        <label class="form-check-label">Active</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- EDIT MODAL -->
+<div class="modal fade" id="editEquipmentModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="editLabEquipmentForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Lab Equipment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editLabEquipId" name="id" />
+                    <div class="mb-3">
+                        <label class="form-label">Equipment</label>
+                        <select class="form-select" id="editEquipmentId" name="equipmentId">
+                            @foreach (var eq in (SelectList)ViewBag.Equipments)
+                            {
+                                <option value="@eq.Value">@eq.Text</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Department</label>
+                        <select class="form-select" id="editDepartmentId" name="departmentId">
+                            @foreach (var dept in (SelectList)ViewBag.Departments)
+                            {
+                                <option value="@dept.Value">@dept.Text</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="editLabIsActive" name="isActive" />
+                        <label class="form-check-label">Active</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="saveEditedLabEquipment()">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f2f9f9;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .info-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .table thead {
+        background-color: #e8f5fe;
+    }
+
+    .table tbody tr:hover {
+        background-color: #f3fbff;
+    }
+
+    .btn-custom {
+        background-color: #1c6dd0;
+        color: white;
+        font-weight: 500;
+    }
+
+        .btn-custom:hover {
+            background-color: #155fa0;
+        }
+
+    .modal-content {
+        border-radius: 12px;
+    }
+
+    .dropdown-menu {
+        border-radius: 10px;
+    }
+
+        .dropdown-menu a:hover {
+            background-color: #f0f9ff;
+        }
+
+    .page-header {
+        background: linear-gradient(to right, #e6f7ff, #cde8ff);
+        color: #1a1a1a;
+        padding: 2rem 1rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+    }
+</style>
+
+<script>
+      function openEditModal(id, equipmentId, departmentId, isActive) {
+      $('#editLabEquipId').val(id);
+      $('#editEquipmentId').val(equipmentId);
+      $('#editDepartmentId').val(departmentId);
+      $('#editLabIsActive').prop('checked', isActive === 'True' || isActive === true);
+      $('#editEquipmentModal').modal('show');
+    }
+
+    function saveEditedLabEquipment() {
+      $.ajax({
+        type: 'POST',
+        url: '/Labratories/EditLaboratoryEquipment',
+        data: $('#editLabEquipmentForm').serialize(),
+        success: function () {
+          location.reload();
+        },
+        error: function () {
+          alert('Failed to update lab equipment.');
+        }
+      });
+    }
+    function deleteEquipment(id) {
+        if (confirm("Are you sure you want to delete this equipment?")) {
+            $.ajax({
+                type: 'POST',
+                url: '/Labratories/DeleteEquipment', 
+                data: { id: id },
+                success: function () {
+                    location.reload();
+                },
+                error: function () {
+                    alert('Failed to delete equipment.');
+                }
+            });
+        }
+    }
+</script>

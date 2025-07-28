@@ -1,0 +1,89 @@
+﻿@model IEnumerable<LEMS.Models.Equipment>
+@{
+    ViewData["Title"] = "Equipment List";
+    var role = ViewBag.Role as string;
+}
+
+<div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary fw-bold">Equipment List</h2>
+
+        @* Only admin can see the Add New button *@
+        @if (role == "admin")
+        {
+            <a asp-action="Create" class="btn btn-success rounded-3">
+                <i class="bi bi-plus-circle"></i> Add New Equipment
+            </a>
+        }
+    </div>
+
+    <div class="card shadow-sm rounded-4">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle text-center">
+                    <thead class="table-light">
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.First().Name)</th>
+                            <th>@Html.DisplayNameFor(model => model.First().MeasurmentUnit)</th>
+                            <th>@Html.DisplayNameFor(model => model.First().Code)</th>
+                            <th>Image</th>
+                            <th>@Html.DisplayNameFor(model => model.First().Discription)</th>
+                            <th>@Html.DisplayNameFor(model => model.First().IsActive)</th>
+                            <th>@Html.DisplayNameFor(model => model.First().IsDeleted)</th>
+                            <th>Type</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Name</td>
+                                <td>@item.MeasurmentUnit</td>
+                                <td>@item.Code</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(item.PhotoUrl))
+                                    {
+                                        <img src="@item.PhotoUrl" alt="Equipment Image" width="60" class="img-thumbnail" />
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">No Image</span>
+                                    }
+                                </td>
+                                <td>@item.Discription</td>
+                                <td>
+                                    <span class="badge bg-@(item.IsActive ? "success" : "secondary")">
+                                        @(item.IsActive ? "Active" : "Inactive")
+                                    </span>
+                                </td>
+                                <td></td>
+                                <td>@item.EquipmentsType?.Name</td>
+                                <td>
+                                    @if (role == "admin")
+                                    {
+                                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning me-1">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </a>
+                                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info text-white me-1">
+                                            <i class="bi bi-eye-fill"></i>
+                                        </a>
+                                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">
+                                            <i class="bi bi-trash-fill"></i>
+                                        </a>
+                                    }
+                                    else if (role == "lab technical")
+                                    {
+                                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info text-white">
+                                            <i class="bi bi-eye-fill"></i>
+                                        </a>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

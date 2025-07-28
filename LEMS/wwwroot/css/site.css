@@ -1,0 +1,74 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #f7f7fa00;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.nav-link:hover {
+    animation: bounce 0.5s ease-in-out;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.head-image {
+    max-height: 300px;
+    background-image: url('../images/lems/image_1.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.hu-card {
+    border-width: thin;
+    border-color: rgb(45, 108, 162);
+    border-radius: 10px;
+}
+
+.lems-title {
+    font-family: Jokerman;
+}

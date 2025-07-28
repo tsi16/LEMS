@@ -1,0 +1,32 @@
+﻿@model IEnumerable<LEMS.Models.Department>
+
+@{
+    ViewData["Title"] = "Department List";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center fw-bold">Department List</h2>
+
+    @if (!Model.Any())
+    {
+            <div class="alert alert-warning text-center">No departments available.</div>
+    }
+    else
+    {
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var department in Model)
+            {
+                        <div class="col">
+                            <div class="card shadow-sm h-100 border-0 rounded-4">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary fw-bold">@department.Name</h5>
+                                    <p class="card-text text-muted mb-0">
+                                        <strong>Branch:</strong> @department.Branch?.Name ?? "N/A"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            }
+            </div>
+    }
+</div>

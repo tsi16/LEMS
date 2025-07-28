@@ -1,0 +1,69 @@
+﻿@model LEMS.Models.Equipment
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Equipment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MeasurmentUnit" class="control-label"></label>
+                <input asp-for="MeasurmentUnit" class="form-control" />
+                <span asp-validation-for="MeasurmentUnit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Code" class="control-label"></label>
+                <input asp-for="Code" class="form-control" />
+                <span asp-validation-for="Code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EquipmentsTypeId" class="control-label"></label>
+                <select asp-for="EquipmentsTypeId" class="form-control" asp-items="ViewBag.EquipmentsTypeId"></select>
+                <span asp-validation-for="EquipmentsTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhotoUrl" class="control-label"></label>
+                <input asp-for="PhotoUrl" class="form-control" />
+                <span asp-validation-for="PhotoUrl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Discription" class="control-label"></label>
+                <input asp-for="Discription" class="form-control" />
+                <span asp-validation-for="Discription" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="IsDeleted" class="control-label"></label>
+                <input asp-for="IsDeleted" class="form-control" />
+                <span asp-validation-for="IsDeleted" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

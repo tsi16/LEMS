@@ -1,0 +1,180 @@
+﻿@model LEMS.Models.LaboratoryEquipment
+@{
+    ViewData["Title"] = "Equipment";
+    var entries = ViewBag.Entries as List<LEMS.Models.EquipmentEntry>;
+}
+<p>
+    Quantity =  @Model.Quantity
+</p>
+
+<div class="container my-4">
+
+    <h2 class="text-primary mb-4">Equipment Details</h2>
+
+    <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4">Quantity</dt>
+                        <dd class="col-sm-8">@Model.Quantity</dd>
+
+                        <dt class="col-sm-4">Is Active</dt>
+                        <dd class="col-sm-8">@Model.IsActive</dd>
+
+                        <dt class="col-sm-4">Department</dt>
+                        <dd class="col-sm-8">@Model.Department?.Name</dd>
+                    </dl>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4">Equipment</dt>
+                        <dd class="col-sm-8">@Model.Equipment?.Name</dd>
+
+                        <dt class="col-sm-4">Laboratory</dt>
+                        <dd class="col-sm-8">@Model.Labratory?.Name</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-3">
+        <div class="col-md-6">
+            <h4 class="mb-0">Previous Entries</h4>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addEntryModal">
+                <i class="bi bi-plus-circle"></i> Add Entry
+            </button>
+        </div>
+    </div>
+
+    <table class="table table-sm table-bordered table-striped align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Quantity</th>
+                <th>Entry Date</th>
+                <th>Withdrawn</th>
+                <th>Action By</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (entries != null && entries.Any())
+            {
+                foreach (var entry in entries)
+                {
+                    <tr>
+                        <td>@entry.Quantity</td>
+                        <td>@entry.EntryDate.ToShortDateString()</td>
+                        <td>@entry.WithdrawalQuantity</td>
+                        <td>@entry.ActionByNavigation?.FirstName</td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#withdrawModal"
+                                    data-entry-id="@entry.Id"
+                                    data-quantity="@entry.Quantity"
+                                    data-withdrawn="@entry.WithdrawalQuantity">
+                                Withdraw
+                            </button>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr><td colspan="5" class="text-muted text-center">No entries found.</td></tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Add Entry Modal -->
+<div class="modal fade" id="addEntryModal" tabindex="-1" aria-labelledby="addEntryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="AddEntry" asp-controller="Labratories" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Equipment Entry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="EquipmentId" value="@Model.EquipmentId" />
+                    <input type="hidden" name="LabratoryId" value="@Model.LabratoryId" />
+
+                    <div class="mb-3">
+                        <label class="form-label">Quantity</label>
+                        <input name="Quantity" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Entry Date</label>
+                        <input type="date" name="EntryDate" class="form-control" required />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Withdraw Modal -->
+<div class="modal fade" id="withdrawModal" tabindex="-1" aria-labelledby="withdrawModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="withdrawForm" asp-action="AddWithdrawal" asp-controller="Labratories" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Withdraw Equipment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="EntryId" id="withdrawEntryId" />
+
+                    <div class="mb-3">
+                        <label class="form-label">Available Quantity</label>
+                        <input type="text" id="availableQuantity" class="form-control" disabled />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Withdraw Quantity</label>
+                        <input type="number" step="0.01" name="Quantity" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Remark</label>
+                        <textarea name="Remark" class="form-control" rows="2" required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Date</label>
+                        <input type="date" name="Date" class="form-control" required value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger">Withdraw</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    const withdrawModal = document.getElementById('withdrawModal');
+    withdrawModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget;
+        const entryId = button.getAttribute('data-entry-id');
+        const totalQty = parseFloat(button.getAttribute('data-quantity'));
+        const withdrawnQty = parseFloat(button.getAttribute('data-withdrawn'));
+        const availableQty = totalQty - withdrawnQty;
+
+        document.getElementById('withdrawEntryId').value = entryId;
+        document.getElementById('availableQuantity').value = availableQty.toFixed(2);
+    });
+</script>

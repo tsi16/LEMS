@@ -1,0 +1,89 @@
+﻿@model IEnumerable<LEMS.Models.Equipment>
+
+@{
+    ViewData["Title"] = "Equipment List";
+}
+
+
+<h2 class="text-center mb-5">📋 Equipment Catalog</h2>
+
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    @foreach (var item in Model)
+    {
+        <div class="col d-flex">
+            <div class="equipment-card w-100">
+                <img src="@(!string.IsNullOrEmpty(item.PhotoUrl) ? item.PhotoUrl : "https://via.placeholder.com/600x180?text=No+Image")"
+                     alt="Equipment Image" class="equipment-image" />
+
+                <div class="equipment-details">
+                    <div class="equipment-title">@item.Name</div>
+                    <div class="equipment-info"><strong>Model:</strong> @item.Model</div>
+                </div>
+
+                <a href="@Url.Action("EquipDetails", "Pub", new { id = @item.Id })" class="see-more-btn">See More</a>
+               
+            </div>
+        </div>
+    }
+</div>
+
+
+<style>
+    .equipment-card {
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+        transition: transform 0.25s ease;
+        background: #fff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .equipment-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .equipment-image {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .equipment-details {
+        padding: 16px 20px;
+        flex: 1;
+    }
+
+    .equipment-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #0a6d6d;
+        margin-bottom: 8px;
+    }
+
+    .equipment-info {
+        font-size: 0.95rem;
+        color: #333;
+        margin-bottom: 14px;
+    }
+
+    .see-more-btn {
+        margin: 0 20px 20px 20px;
+        align-self: flex-start;
+        padding: 6px 16px;
+        background-color: #0a6d6d;
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        transition: background 0.2s ease;
+    }
+
+    .see-more-btn:hover {
+        background-color: #095f5f;
+        text-decoration: none;
+        color: #fff;
+    }
+</style>

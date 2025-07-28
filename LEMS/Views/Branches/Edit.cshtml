@@ -1,0 +1,41 @@
+﻿@model LEMS.Models.Branch
+@{
+    ViewData["Title"] = "Edit";
+}
+<form asp-action="Edit">
+    <div class="card shadow-none">
+        <div class="card-header d-flex justify-content-between align-items-center border-bottom" style="border-color: rgb(45, 108, 162);">
+            <h4 class="mb-0">Edit Branch</h4>
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-success">
+                    <i class="fa fa-save me-1"></i> Save
+                </button>
+                <a class="btn btn-outline-primary" asp-action="Index">
+                    <i class="fa fa-arrow-left me-1"></i> Back To List
+                </a>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="hidden" asp-for="Id" />
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group mb-3">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group form-check mb-3">
+                        <label class="form-check-label">
+                            <input class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

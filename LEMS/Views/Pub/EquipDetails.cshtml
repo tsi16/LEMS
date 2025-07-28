@@ -1,0 +1,38 @@
+﻿@model LEMS.Models.Equipment
+
+@{
+    ViewData["Title"] = "Equipment Details";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center fw-bold mb-4">🔍 Equipment Details</h2>
+
+    <div class="card shadow-lg p-4 mx-auto bg-light" style="max-width: 900px; border-radius: 20px;">
+        <img src="@(!string.IsNullOrEmpty(Model.PhotoUrl) ? Model.PhotoUrl : "https://via.placeholder.com/800x250?text=No+Image")"
+             alt="Equipment Image"
+             class="card-img-top mb-4 rounded-4 shadow-sm"
+             style="height: 250px; object-fit: cover;" />
+
+        <div class="card-body">
+            <h4 class="card-title text-primary fw-bold mb-3">@Model.Name</h4>
+
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col">
+                    <p class="mb-1"><strong>Model:</strong> @Model.Model</p>
+                    <p class="mb-1"><strong>Manufacturer:</strong> @Model.Manufacturer</p>
+                    <p class="mb-1"><strong>Serial Number:</strong> @Model.SerialNumber</p>
+                    <p class="mb-1"><strong>Purchase Date:</strong> @Model.PurchaseDate.ToShortDateString()</p>
+                    <p class="mb-1"><strong>Maintenance Date:</strong> @Model.MaintenanceDate.ToShortDateString()</p>
+                </div>
+
+                <div class="col">
+                    <p class="mb-1"><strong>Location:</strong> @Model.Location</p>
+                    <p class="mb-1"><strong>Measurement Unit:</strong> @Model.MeasurmentUnit</p>
+                    <p class="mb-1"><strong>Code:</strong> @Model.Code</p>
+                    <p class="mb-1"><strong>Type:</strong> @Model.EquipmentsType?.Name</p>
+                    <p class="mb-1"><strong>Description:</strong> @Model.Discription</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

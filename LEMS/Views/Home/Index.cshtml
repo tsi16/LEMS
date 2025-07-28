@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<header class="text-center py-5 mb-3 position-relative head-image">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+    <div class="position-relative text-white">
+        <h1 class="lems-title">Welcome to the Hawassa University Lab Management System</h1>
+        <p class="lems-title">Efficiently track and manage university labs and equipment.</p>
+        <a asp-controller="Pub" asp-action="About" class="btn text-white" style="background-color: rgb(45, 108, 162)">Read More...</a>
+    </div>
+</header>
+
+<h2 class="text-center my-5 lems-title">Facts and figures about HU labs</h2>
+<div class="pb-4">
+    <div class="row ">
+        <div class="col-md-4">
+            <div class="card text-center p-3 hu-card">
+                <i class="fa fa-flask fa-3x text-primary"></i>
+                <h3>Total Labs</h3>
+                <p class="display-4">12</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center p-3 hu-card">
+                <i class="fa fa-cogs fa-3x text-success"></i>
+                <h3>Total Equipment</h3>
+                <p class="display-4">340</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center p-3 hu-card">
+                <i class="fa fa-check-circle fa-3x text-warning"></i>
+                <h3>Active Labs</h3>
+                <p class="display-4">8</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
